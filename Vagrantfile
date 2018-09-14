@@ -9,9 +9,8 @@ Vagrant.configure("2") do |config|
 end
 
   config.vm.define name="mysql" do |node|
-    node.vm.box = "qwerty1979/highfive"
+    node.vm.box = "qwerty1979/mysql"
     node.vm.hostname = name
-    node.vm.provision "shell", path: "provision_mysql.sh"
   end
 
 end
