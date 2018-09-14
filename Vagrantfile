@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
     node.vm.hostname = name
     node.vm.provision "shell", path: "provision_nginx.sh"
   end
+end
 
   config.vm.define name="mysql" do |node|
     node.vm.box = "qwerty1979/highfive"
